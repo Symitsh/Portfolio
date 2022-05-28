@@ -7,6 +7,15 @@
    <!-- Template css Files -->
 	<link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
+
+  <!-- Style Switcher -->
+  <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
+	<link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
+
 </head>
 <body>
 
@@ -512,10 +521,38 @@
       <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
     </div>
   </div>
-  <!-- Lightbox End --> <!-- Apparition de l'image en grand -->
+  <!-- Lightbox End --> <!-- Apparition de l'image en grand Fin -->
+
+  <!-- Style Switcher -->
+  <div class="style-switcher">
+    <div class="toggle-style-switcher">
+      <i class="fa fa-cog"></i>
+    </div>
+    <h5>Choisis ton style</h5>
+    <ul>
+      <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839" onclick="setActiveStyle('pink')"></a></li>
+      <li><a href="javascript:void(0);" title="blue" style="background-color: #2196F3" onclick="setActiveStyle('blue')"></a></li>
+      <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f" onclick="setActiveStyle('orange')"></a></li>
+      <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400" onclick="setActiveStyle('yellow')"></a></li>
+      <li><a href="javascript:void(0);" title="green" style="background-color: #72b626" onclick="setActiveStyle('green')"></a></li>
+    </ul>
+    <h5>Thème</h5>
+    <label>
+      <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+      Clair
+    </label>
+    <label>
+      <input type="radio" class="body-skin" name="body-style" value="dark">
+      Sombre
+    </label>
+  </div>
+  <!-- Style Switcher End -->
 
   <!-- Template js -->
   <script src="js/script.js"></script>
+
+  <!-- Style js -->
+  <script src="js/styleSwitcher.js"></script>
 
 </body>
 </html>
