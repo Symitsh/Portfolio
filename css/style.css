@@ -396,19 +396,16 @@ input,textarea,select{
   display: -ms-flexbox;
   display: flex;
 }
-
 .home .intro{
   text-align: center;
 }
-
 .home .intro img{
-  height: 200px;
-  width: 200px;
+  height: 268px;
+  width: 268px;
   border-radius: 50%;
   display: inline-block;
   border: 8px solid #ffffff;
 }
-
 .home .intro h1{
   font-size: 30px;
   color: #302e4d;
@@ -416,7 +413,6 @@ input,textarea,select{
   font-weight: 700;
   margin: 20px 0 5px;
 }
-
 .home .intro p{
   font-size: 16px;
   font-weight: 500;
@@ -424,11 +420,9 @@ input,textarea,select{
   line-height: 22px;
   color: #504e70;
 }
-
 .home .intro .social-links{
   margin-top: 25px;
 }
-
 .home .intro .social-links a{
   height: 35px;
   width: 35px;
