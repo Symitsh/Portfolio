@@ -172,6 +172,11 @@ navTogglerBtn.addEventListener("click",asideSectionTogglerBtn)
 function asideSectionTogglerBtn(){
   aside.classList.toggle("open");
   navTogglerBtn.classList.toggle("open");
+  if (aside.classList.contains("open")) {
+    /*modif*/
+    aside.style.width="200px";
+
+  }
   for(let i=0; i<totalNavList; i++){
     allSection[i].classList.toggle("open");
   }
